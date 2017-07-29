@@ -40,7 +40,7 @@ case of gem updates (see: [rubygems guides](http://guides.rubygems.org/patterns/
 * security tools:
   * [brakeman](https://github.com/presidentbeef/brakeman)
   * [bundler_audit](https://github.com/rubysec/bundler-audit)
-  * [secure_headers](https://github.com/anotherhale/secure_headers) with a minimal working configuration (https://github.com/anotherhale/secure_headers)
+  * [secure_headers](https://github.com/anotherhale/secure_headers) with a minimal working configuration
 * testing tools:
   * [Rspec](https://github.com/rspec/rspec)
   * [Factory Girl](https://github.com/thoughtbot/factory_girl)
