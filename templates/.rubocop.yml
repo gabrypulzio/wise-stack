@@ -7,7 +7,6 @@ AllCops:
   - 'db/seeds.rb'
   - 'test/test_helper.rb'
 
-
 Metrics/LineLength:
   Max: 100
 
