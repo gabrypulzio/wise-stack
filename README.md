@@ -10,7 +10,7 @@ have the template up-to-date
 
 ```shell
 git clone git@github.com:gabrypulzio/wise-stack.git /path/to/wise-stack
-rails new [APPLICATION_NAME] -m /path/to/wise-stack/template.rb
+rails new [APPLICATION_NAME] -T -m /path/to/wise-stack/template.rb
 ```
 
 ## Features
