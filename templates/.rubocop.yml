@@ -1,0 +1,27 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+  - 'config/environments/*'
+  - 'config/initializers/*'
+  - 'db/schema.rb'
+  - 'db/seeds.rb'
+  - 'test/test_helper.rb'
+
+
+Metrics/LineLength:
+  Max: 100
+
+Style/IfUnlessModifier:
+  MaxLineLength: 100
+
+Style/WhileUntilModifier:
+  MaxLineLength: 100
+
+Layout/IndentationConsistency:
+  EnforcedStyle: rails
+
+Metrics/MethodLength:
+  Max: 20
+
+Style/Documentation:
+  Enabled: false
