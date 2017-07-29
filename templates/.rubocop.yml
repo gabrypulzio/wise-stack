@@ -1,11 +1,12 @@
 AllCops:
   TargetRubyVersion: 2.3
   Exclude:
-  - 'config/environments/*'
-  - 'config/initializers/*'
-  - 'db/schema.rb'
-  - 'db/seeds.rb'
-  - 'test/test_helper.rb'
+    - 'config/environments/*'
+    - 'config/initializers/*'
+    - 'db/schema.rb'
+    - 'db/seeds.rb'
+    - 'test/test_helper.rb'
+    - 'spec/**/*'
 
 Metrics/LineLength:
   Max: 100
