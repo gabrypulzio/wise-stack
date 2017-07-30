@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-gem_group :test do
+add_to_gem_group :test do
   gem_latest_version 'database_cleaner'
 end
 

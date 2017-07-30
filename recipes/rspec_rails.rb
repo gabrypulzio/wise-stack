@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-gem_group :development, :test do
+add_to_gem_group :development, :test do
   gem_latest_version 'rspec-rails'
 end
 

@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+update_gemfile
+
 after_bundle do
   say_info 'Autocorrect files with rubocop'
   run 'rubocop -a --fail-level A > /dev/null'
