@@ -1,5 +1,7 @@
 AllCops:
   TargetRubyVersion: 2.3
+  DisplayCopNames: true
+  DisplayStyleGuide: true
   Exclude:
     - 'config/environments/*'
     - 'config/initializers/*'
