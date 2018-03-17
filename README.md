@@ -58,8 +58,7 @@ case of gem updates (see: [rubygems guides](http://guides.rubygems.org/patterns/
   * removes application.css and install a blank application.scss in favor of scss syntax
 
 * rubocop:
-  * uses user ~/.rubocop.yml for configuration. If the configuration is not present, the recipe will
-  download [this](https://gist.githubusercontent.com/gabrypulzio/892dbb0bae11048da89772fcb109705c/raw/5a39c628d3e274140a973aa4d0af7baa0ab65da8/.rubocop.yml) rubocop configuration on the root of the project
+  * installs a custom .rubocop.yml on the project root path. If ~/.rubocop.yml is present it lets the user choose to use the user configuration or to install the custom .rubocop.yml on the project root path.
   * a rubocop autocorrection will be executed on the project after bundle
 
 * slim-rails
