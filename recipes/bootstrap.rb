@@ -1,18 +1,18 @@
 # frozen_string_literal: true
 
 if yes_install_gem? 'bootstrap'
-  gem_latest_version 'bootstrap-sass'
+  gem_latest_version 'bootstrap'
   gem_latest_version 'jquery-rails'
 
   append_to_file 'app/assets/stylesheets/application.scss' do
     <<~CODE
-      @import "bootstrap-sprockets";
       @import "bootstrap";
     CODE
   end
   insert_into_file 'app/assets/javascripts/application.js', before: '//= require rails-ujs' do
     <<~CODE
       //= require jquery
+      //= require popper
       //= require bootstrap-sprockets
     CODE
   end

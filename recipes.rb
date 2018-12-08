@@ -12,7 +12,7 @@ apply_recipe 'devise'
 apply_recipe 'git'
 apply_recipe 'overcommit'
 apply_recipe 'pry_rails'
-apply_recipe 'rails_factory_girl'
+apply_recipe 'factory_bot_rails'
 apply_recipe 'rspec_rails'
 apply_recipe 'database_cleaner' # must run after rspec_rails
 apply_recipe 'rubocop'
