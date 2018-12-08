@@ -6,18 +6,15 @@ AllCops:
     - 'config/environments/*'
     - 'config/initializers/*'
     - 'db/schema.rb'
+    - 'db/migrate/*'
     - 'db/seeds.rb'
     - 'test/test_helper.rb'
     - 'spec/**/*'
+    - 'bin/update'
+    - 'bin/setup'
 
 Metrics/LineLength:
   Max: 100
-
-Style/IfUnlessModifier:
-  MaxLineLength: 100
-
-Style/WhileUntilModifier:
-  MaxLineLength: 100
 
 Layout/IndentationConsistency:
   EnforcedStyle: rails
