@@ -12,6 +12,7 @@ AllCops:
     - 'spec/**/*'
     - 'bin/update'
     - 'bin/setup'
+    - 'app/views/**/*.slim'
 
 Metrics/LineLength:
   Max: 100
