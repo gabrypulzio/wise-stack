@@ -21,6 +21,7 @@ apply_recipe 'simple_form'
 apply_recipe 'slim_rails'
 apply_recipe 'mini_racer'
 apply_recipe 'xray_rails'
+apply_recipe 'basic_user_dashboard'
 
 # template post hooks
 apply_recipe 'post_hooks'
