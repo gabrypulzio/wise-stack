@@ -19,7 +19,7 @@ apply_recipe 'rubocop'
 apply_recipe 'secure_headers'
 apply_recipe 'simple_form'
 apply_recipe 'slim_rails'
-apply_recipe 'therubyracer'
+apply_recipe 'mini_racer'
 apply_recipe 'xray_rails'
 
 # template post hooks
