@@ -36,6 +36,15 @@ def gem_installed?(gem_name, use_bundle = false)
   `#{bundle_cmd}gem list -i #{gem_name}`.include? 'true'
 end
 
+# check if gems needed by recipe are installed
+def assert_gem_dependency_for(recipe, gem_names)
+  Array(gem_names).each do |gem_name|
+    unless gem_installed?(gem_name, true)
+      say_error "#{gem_name} need to be installed to use '#{recipe}' recipe"
+    end
+  end
+end
+
 # inject gem into Gemfile using '~>' convention, with its latest version explicited
 def gem_latest_version(gem_name, args = {})
   gem gem_name, "~> #{get_gem_latest_version(gem_name)}", args
