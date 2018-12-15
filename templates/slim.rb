@@ -1,1 +1,3 @@
-Slim::Engine.set_default_options pretty: Rails.env.development?
+# frozen_string_literal: true
+
+Slim::Engine.options[:pretty] = Rails.env.development?
