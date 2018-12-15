@@ -15,7 +15,7 @@ add_to_gem_group :development do
     end
     if editor
       <<~CODE
-        BetterErrors.editor = "#{editor}"
+        BetterErrors.editor = "#{editor}" if defined?(BetterErrors)
       CODE
     else
       <<~CODE
