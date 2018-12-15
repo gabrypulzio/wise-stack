@@ -19,6 +19,8 @@ insert_into_file 'app/assets/javascripts/application.js', before: '//= require r
 end
 copy_file 'templates/bootstrap/helpers/bootstrap_helper.rb',
           'app/helpers/bootstrap_helper.rb', force: true
+copy_file 'templates/bootstrap/helpers/gui_helper.rb',
+          'app/helpers/gui_helper.rb', force: true
 if yep? 'install a basic bootstrap layout?'
   after_bundle do
     copy_file 'templates/bootstrap/assets/stylesheets/application.scss',
