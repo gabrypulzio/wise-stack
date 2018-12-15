@@ -2,7 +2,7 @@
 
 return unless yep? 'install a basic user dashboard?'
 
-assert_gem_dependency_for 'basic_user_dashboard', 'devise'
+return unless assert_gem_dependency_for 'basic_user_dashboard', 'devise'
 
 after_bundle do
   generate 'devise User'
