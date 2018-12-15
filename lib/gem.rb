@@ -40,9 +40,11 @@ end
 def assert_gem_dependency_for(recipe, gem_names)
   Array(gem_names).each do |gem_name|
     unless gem_installed?(gem_name, true)
-      say_error "#{gem_name} need to be installed to use '#{recipe}' recipe"
+      say_warning "#{gem_name} need to be installed to use '#{recipe}' recipe"
+      return false
     end
   end
+  true
 end
 
 # inject gem into Gemfile using '~>' convention, with its latest version explicited
