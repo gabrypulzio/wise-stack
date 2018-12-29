@@ -64,3 +64,7 @@ case of gem updates (see: [rubygems guides](http://guides.rubygems.org/patterns/
 * Secure_headers
   * a basic configuration is provided. Remember to review secure_headers initializers before going
   to production
+
+## TODO
+
+* Integrate with webpacker
