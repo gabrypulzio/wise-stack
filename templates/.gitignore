@@ -13,6 +13,8 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+*.swp
+*~
 
 /node_modules
 /yarn-error.log
@@ -54,6 +56,9 @@ passenger.*
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Mac finder artifacts
+.DS_Store
 
 # if using bower-rails ignore default bower_components path bower.json files
 /vendor/assets/bower_components
