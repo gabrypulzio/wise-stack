@@ -5,7 +5,6 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 
-
 # Ignore bundler config.
 /.bundle
 
@@ -31,6 +30,8 @@
 /config/database.yml
 /config/secrets.yml
 /config/mongoid.yml
+/config/master.key
+/config/credentials.yml.enc
 /.env
 
 # Ignore the default SQLite database.
@@ -39,3 +40,22 @@
 
 # Ignore passenger files
 passenger.*
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Ignore precompiled javascript packs
+/public/packs
+/public/packs-test
+/public/assets
+
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# if using bower-rails ignore default bower_components path bower.json files
+/vendor/assets/bower_components
+*.bowerrc
+bower.json
