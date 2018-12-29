@@ -17,7 +17,7 @@ rails new [APPLICATION_NAME] -T -m /path/to/wise-stack/template.rb
 
 * Modular recipes
 * Produces explicit gem version on Gemfile, to avoid breaking changes on code in
-case of gem updates (see: [rubygems guides](http://guides.rubygems.org/patterns/#pessimistic-version-constraint)
+case of gem updates (see: [rubygems guides](http://guides.rubygems.org/patterns/#pessimistic-version-constraint))
 * Automatically install latest versions of gems
 * Updates automatically system gem tools (rubocop, html2slim)
 * Uses [Slim](http://slim-lang.com/) as template language
