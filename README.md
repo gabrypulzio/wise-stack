@@ -3,8 +3,7 @@
 Wise-stack is an opinioned modular Rails 5.2+ application template focused on Ruby developing
 best practices.
 
-Wise-stack aims to provide a customizable stack of recipes for the template. It always install the gem latest version obtained from rubygems.org, so you don't have to bother to
-have the template up-to-date
+Wise-stack aims to provide a customizable stack of recipes for the template. It always install the gem latest version obtained from rubygems.org, so you don't have to bother to have the template up-to-date.
 
 ## Usage
 
