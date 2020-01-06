@@ -1,3 +1,8 @@
+### 1.2.1 - 2020-01-06
+
+* Fix: Disable xray_rails recipe in rails 6 due to a current bug in the xray-rails gem.
+* Add rails-ujs javascript code in application.js only for rails 5; rails 6 already add the proper code.
+
 ### 1.2.0 - 2020-01-06
 
 * Use webpacker.
