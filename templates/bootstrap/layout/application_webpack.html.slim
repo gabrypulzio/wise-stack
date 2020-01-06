@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title
+      | Foo
+    = csrf_meta_tags
+    = stylesheet_pack_tag 'stylesheets', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    = render 'layouts/navbar'
+    main.container role="main"
+      = bootstrap_flash
+      = yield
+

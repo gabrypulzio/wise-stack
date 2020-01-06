@@ -1,5 +1,4 @@
 AllCops:
-  TargetRubyVersion: 2.3
   DisplayCopNames: true
   DisplayStyleGuide: true
   Exclude:
@@ -14,11 +13,11 @@ AllCops:
     - 'bin/setup'
     - 'app/views/**/*.slim'
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 100
 
 Layout/IndentationConsistency:
-  EnforcedStyle: rails
+  EnforcedStyle: indented_internal_methods
 
 Metrics/MethodLength:
   Max: 20

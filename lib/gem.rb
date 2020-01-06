@@ -9,6 +9,7 @@ def current_gem_version(gem_name)
   _, stdout, stderr, wait_thr = Open3.popen3("gem specification #{gem_name}")
   raise "Error while getting infos for gem #{gem_name}: #{stderr.read}" unless
     wait_thr.value.success?
+
   YAML.safe_load(stdout, [Gem::Specification, Gem::Version, Time, Gem::Dependency,
                           Gem::Requirement, Symbol]).version
 end
@@ -66,6 +67,7 @@ def get_gem_latest_version(gem_name)
     'latest.json')))
   version = json['version']
   return Gem::Version.new(version) if version && version != 'unknown'
+
   say_error "Unable to find valid version for gem '#{gem_name}'."
   exit(1)
 rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError, SocketError,

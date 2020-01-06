@@ -1,3 +1,12 @@
+### 1.2.0 - 2020-01-06
+
+* Use webpacker.
+* Rails 6.0+ compatibility.
+* Use default_answers.yml template for a fully automated template generation.
+* Remove secure_headers recipe.
+* Update .rubocop.yml template.
+
+
 ### 1.1.0 - 2018-12-29
 
 * Add a gem dependency method.

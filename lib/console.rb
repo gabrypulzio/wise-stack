@@ -42,9 +42,26 @@ def say_error(error)
 end
 
 def yes_install_gem?(gem_name)
-  yep?("Install '#{gem_name}' gem?")
+  question = "Install '#{gem_name}' gem?"
+  default_answer = default_answer?(question)
+  if default_answer.nil?
+    yep?(question)
+  else
+    say_info "Default answer for gem install #{gem_name}: #{default_answer ? 'Yes' : 'No'}"
+    default_answer
+  end
 end
 
 def yep?(question)
-  yes? info_text("#{default_message_string} #{question}")
+  default_answer = default_answer?(question)
+  if default_answer.nil?
+    yes? info_text("#{default_message_string} #{question}")
+  else
+    say_info "Default answer for #{question}: #{default_answer ? 'Yes' : 'No'}"
+    default_answer
+  end
+end
+
+def default_answer?(question)
+  @default_answers.fetch(question, nil)
 end

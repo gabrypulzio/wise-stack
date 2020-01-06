@@ -6,8 +6,9 @@ require_relative 'lib/gem'
 require_relative 'lib/system'
 
 def source_paths
-  [File.expand_path(File.dirname(__FILE__))]
+  [__dir__]
 end
 
+load_default_answers
 assert_minimum_rails_version
 apply 'recipes.rb'

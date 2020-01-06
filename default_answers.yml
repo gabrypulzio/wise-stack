@@ -1,0 +1,6 @@
+# Install 'bootstrap' gem?: true
+# Install a basic bootstrap layout?: true
+# Install 'simple_form' gem?: false
+# Install 'devise' gem?: true
+# Install a basic user dashboard?: false # it needs 'devise' and 'bootstrap' recipes
+# Install template rubocop.yml file? (if not, the user ~/.rubocop.yml will be used): false

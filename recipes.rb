@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+apply_recipe 'webpacker'
+apply_recipe 'rails_ujs_webpacker'
 apply_recipe 'rails_overwrites'
 # NOTE: bootstrap recipe should be invoked before simple_form to use bootstrap layout when
 #       installing simple_form
@@ -16,7 +18,6 @@ apply_recipe 'factory_bot_rails'
 apply_recipe 'rspec_rails'
 apply_recipe 'database_cleaner' # must run after rspec_rails
 apply_recipe 'rubocop'
-apply_recipe 'secure_headers'
 apply_recipe 'simple_form'
 apply_recipe 'slim_rails'
 apply_recipe 'mini_racer'
