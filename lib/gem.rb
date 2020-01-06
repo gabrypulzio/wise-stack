@@ -75,3 +75,7 @@ rescue Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError, SocketError,
   say_error "Unable to find latest version for gem '#{gem_name}', error: #{e.message}"
   exit(1)
 end
+
+def rails_6?
+  Gem::Version.new(Rails::VERSION::STRING) >= Gem::Version.new('6.0.0')
+end

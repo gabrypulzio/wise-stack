@@ -3,10 +3,7 @@
 after_bundle do
   run 'yarn add rails-ujs'
 
-  append_to_file 'app/webpacker/packs/application.js' do
-    <<~CODE
-      const Rails = require('rails-ujs');
-      Rails.start();
-    CODE
+  unless rails_6?
+    append_to_file 'app/webpacker/packs/application.js', "require('rails-ujs').start();"
   end
 end
