@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+return unless yes_install_gem? 'slim-rails'
+
 gem_latest_version 'slim-rails'
 
 gem_install 'html2slim'

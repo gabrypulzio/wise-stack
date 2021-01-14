@@ -42,12 +42,20 @@ def say_error(error)
 end
 
 def yes_install_gem?(gem_name)
-  question = "Install '#{gem_name}' gem?"
+  yes_install_element?(gem_name, 'gem')
+end
+
+def yes_install_yarn_package?(package_name)
+  yes_install_element?(package_name, 'yarn package')
+end
+
+def yes_install_element?(element, type)
+  question = "Install '#{element}' #{type}?"
   default_answer = default_answer?(question)
   if default_answer.nil?
     yep?(question)
   else
-    say_info "Default answer for gem install #{gem_name}: #{default_answer ? 'Yes' : 'No'}"
+    say_info "Default answer for #{type} install #{element}: #{default_answer ? 'Yes' : 'No'}"
     default_answer
   end
 end

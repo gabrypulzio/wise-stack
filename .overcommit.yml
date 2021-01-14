@@ -58,3 +58,23 @@ PreCommit:
 
   YamlSyntax:
     enabled: true
+
+  AuthorEmail:
+    enabled: true
+    description: 'Check author email'
+    requires_files: false
+    required: true
+    quiet: true
+    pattern: '^[^@]+@.*$'
+
+  AuthorName:
+    enabled: true
+    description: 'Check for author name'
+    requires_files: false
+    required: true
+    quiet: true
+
+  BrokenSymlinks:
+    enabled: true
+    description: 'Check for broken symlinks'
+    quiet: true

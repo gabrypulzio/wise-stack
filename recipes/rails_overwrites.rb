@@ -9,8 +9,6 @@ inject_into_class 'config/application.rb', 'Application' do
       g.stylesheets false
       g.jbuilder false
     end
-
-    config.assets.quiet = true
   CODE
 end
 

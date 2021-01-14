@@ -5,7 +5,7 @@ add_to_gem_group :test do
 end
 
 after_bundle do
-  insert_into_file 'spec/spec_helper.rb', after: 'RSpec.configure do |config|' do
+  insert_into_file 'spec/rails_helper.rb', after: 'RSpec.configure do |config|' do
     <<-CODE.gsub(/^\s+\|/, '')
       |
       |  config.before(:suite) do

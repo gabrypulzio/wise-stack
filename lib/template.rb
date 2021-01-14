@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RAILS_MINIMUM_VERSION = '5.2.4'
+RAILS_MINIMUM_VERSION = '6.1.0'
 
 def assert_minimum_rails_version
   minimum_rails_version = Gem::Version.new(RAILS_MINIMUM_VERSION)

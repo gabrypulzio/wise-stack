@@ -2,11 +2,7 @@
 
 require_relative '../lib/bootstrap/bootstrap'
 
-return unless yes_install_gem? 'bootstrap'
+return unless yes_install_yarn_package? 'bootstrap'
 
-if gem_installed? 'webpacker'
-  install_boostrap_webpacker
-else
-  install_bootstrap_asset_pipeline
-end
+install_boostrap_webpacker
 install_bootstrap_helpers
